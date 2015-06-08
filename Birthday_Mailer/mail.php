@@ -8,8 +8,8 @@ $mail = new PHPMailer;
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com';                       // Specify main and backup server
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'birthdays.trendin@gmail.com';                   // SMTP username
-$mail->Password = 'trendin@123';               // SMTP password
+$mail->Username = 'mymail@mymail.com';                   // SMTP username
+$mail->Password = 'mypass';               // SMTP password
 $mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
 $mail->Port = 587;                                    //Set
 $conn = mysqli_connect('localhost', 'root', '','bdb');
@@ -80,11 +80,7 @@ else
               //  echo 'Mailer Error: ' . $mail->ErrorInfo;
                 exit;
             }else{
- 
         echo 'Message has been sent';}
-        
     }
-    
-
 }
 ?>
